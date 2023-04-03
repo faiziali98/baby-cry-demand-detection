@@ -49,7 +49,7 @@ app.post('/upload', upload.single('file'), async (req, res) => {
   `);
 });
 
-const check_upload = multer({ dest: '/ml-module/data/tests/' });
+const check_upload = multer({ dest: './ml-module/data/tests/' });
 
 app.post('/check', check_upload.single('file'), async (req, res) => {
   const file = req.file;
