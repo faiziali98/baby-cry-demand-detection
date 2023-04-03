@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    .container
+      form(action='/upload', method='POST', enctype='multipart/form-data')
+        h2.text-center Upload File For Train Image
+        .form-group
+          label(for='option') Label for Image:
+          select.form-control(name='option' required)
+            option(value='' disabled selected) Select an option
+            each option in options
+              option(value=option) #{option}
+        .form-group
+          label(for='file') Select a file:
+          input.form-control(type='file', name='file' required)
+        .form-group
+          button.btn.btn-primary(type='submit') Upload File
+
+    .container
+      form(action='/check', method='POST', enctype='multipart/form-data')
+        h2.text-center Upload Image to Check Status of Baby
+        .form-group
+          label(for='file') Select a file:
+          input.form-control(type='file', name='file' required)
+        .form-group
+          button.btn.btn-primary(type='submit') Upload File
