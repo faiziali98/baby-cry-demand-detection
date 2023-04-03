@@ -62,5 +62,5 @@ model.fitDataset(trainData, {
   validationSteps: validationSteps
 }).then(() => {
   // Save the trained model to a file
-  model.save('file://./trained-models/model-1c');
+  model.save('file://../trained-models/model-1a');
 });
