@@ -2,7 +2,7 @@
 ## Overview
 This is a Node.js application that collects data, trains a machine learning model, and uses the model to detect baby demand. The model is based on a deep neural network trained using TensorFlow.js.
 
-## Directory Tree
+## Directories Tree
 
 ```
 baby-demand-detector/
